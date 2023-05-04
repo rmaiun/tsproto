@@ -1,12 +1,17 @@
 type Age = number | Date
 
-interface Cat {
+type Cat = {
     name: string,
     age: Age
 }
 
-interface CatEntity {
+type  CatEntity =  {
     id: number,
     name: string,
     age: number
+}
+
+export {
+    Cat,
+    CatEntity
 }

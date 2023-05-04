@@ -1,5 +1,6 @@
 import pool from '../configs/dbConfig';
 import {PoolClient} from "pg";
+import {Cat, CatEntity} from "../configs/datatypes";
 
 class CatRepo{
     public async createCat(cat:Cat){

@@ -4,6 +4,7 @@ import path from "path";
 import CatRepo from "./repos/CatRepo";
 import * as process from "process";
 import bodyParser from 'body-parser'
+import {Cat} from "./configs/datatypes";
 
 // initialize configuration
 dotenv.config();
