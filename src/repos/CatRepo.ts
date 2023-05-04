@@ -9,8 +9,8 @@ class CatRepo{
             id: 1,
             name: cat.name,
             age: ageValue
-        }
-        await client.query(`insert into arbiter.cat (id, name, age) values (${catEntity.id}, ${catEntity.name}, ${catEntity.age})`)
+        };
+        await client.query(`insert into arbiter.cat (id, name, age) values (${catEntity.id}, '${catEntity.name}', ${catEntity.age})`);
         client.release();
     }
 }
